@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mobile Shop</h1>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="products.html">Products</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="login.html">Login</a>
+            <div id="login-section">
+                <span id="user-info">Welcome, Guest!</span>
+                <button id="logout-button" style="display: none;">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="content">
+        <!-- Content for the main section can go here -->
+        <h2>Welcome to Mobile Shop!</h2>
+        <p>Explore our latest products and get in touch with us.</p>
+
+        <!-- Login Form -->
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Featured Products Section -->
+        <section id="featured-products">
+            <!-- Product cards will be dynamically added here by JavaScript -->
+        </section>
+    </section>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
