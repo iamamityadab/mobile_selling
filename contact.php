@@ -1,4 +1,4 @@
-<!-- contact.php -->
+<!-- contact-->
 
 <!DOCTYPE html>
 <html lang="en">
