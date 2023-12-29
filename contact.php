@@ -1,4 +1,4 @@
-<!-- contact-->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +46,6 @@
     </form>
 
     <script>
-        // You can include any additional JavaScript specific to contact.html here
     </script>
 </body>
 

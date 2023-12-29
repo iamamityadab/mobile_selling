@@ -4,50 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Shop</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mobile Shop - Home</title>
+    <link rel="stylesheet" href="new_syle.css">
+    <style>
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Mobile Shop</h1>
         <nav>
-            <a href="home.html">Home</a> |
-            <a href="products.html">Products</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="login.html">Login</a>
-            <div id="login-section">
-                <span id="user-info">Welcome, Guest!</span>
-                <button id="logout-button" style="display: none;">Logout</button>
-            </div>
+            <a href="product.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
         </nav>
     </header>
 
-    <section id="content">
-        <!-- Content for the main section can go here -->
-        <h2>Welcome to Mobile Shop!</h2>
-        <p>Explore our latest products and get in touch with us.</p>
+    <div class="container">
+        <div class="split left">
+            <h1>Book your new phone today!</h1>
+            <a href="signin.html" class="btn">Sign In</a>
+        </div>
+        <div class="split right">
+            <h1>Sign up here</h1>
+            <a href="signup.html" class="btn">Sign Up</a>
+        </div>
+    </div>
 
-        <!-- Login Form -->
-        <form id="login-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Login</button>
-        </form>
-
-        <!-- Featured Products Section -->
-        <section id="featured-products">
-            <!-- Product cards will be dynamically added here by JavaScript -->
-        </section>
-    </section>
-
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
